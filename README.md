@@ -1,6 +1,6 @@
 ## 궁금붕어  
 <div align="center">
-![image](https://user-images.githubusercontent.com/63579113/119239917-74d49500-bb87-11eb-9864-4f06bf3734e1.png)
+<img width="121" alt="붕어" src="https://user-images.githubusercontent.com/63579113/119240186-14465780-bb89-11eb-8f0c-a42cc6ad1cee.png">
 </div>
 
  ## Service Description 
