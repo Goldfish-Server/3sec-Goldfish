@@ -16,3 +16,89 @@
 
 ## MODEL
 https://github.com/Goldfish-Server/3sec-Goldfish/tree/main/goldfish/models
+
+group
+```javascript
+module.exports = (sequelize, DataTypes) => {
+    return sequelize.define('Group', {
+        GroupIdx: {
+            type: DataTypes.INTEGER,
+            autoIncrement: true,
+            primaryKey: true,
+        },
+        groupName: {
+            type: DataTypes.STRING(50),
+            unique: false,
+            allowNull: true,
+            defaultValue: ''
+        }
+        
+    }, {
+        tableName: 'GROUP_TB',
+        timestamps: false,
+
+    });
+};
+```
+
+post
+```javascript
+module.exports = (sequelize, DataTypes) => {
+    return sequelize.define('POST', {
+        PostIdx: {
+            type: DataTypes.INTEGER,
+            autoIncrement: true,
+            primaryKey: true,
+        },
+        postText: {
+            type: DataTypes.TEXT(),
+            unique: false,
+            allowNull: true,
+            defaultValue: ''
+        },
+        likeCount: {
+            type: DataTypes.INTEGER,
+            unique: false,
+            allowNull: true,
+            defaultValue: 0
+        }
+        
+    }, {
+        tableName: 'POST_TB',
+        timestamps: true,
+
+    });
+};
+
+```
+
+```javascript
+
+module.exports = (sequelize, DataTypes) => {
+    return sequelize.define('QUESTION', {
+        QuestionIdx: {
+            type: DataTypes.INTEGER,
+            autoIncrement: true,
+            primaryKey: true,
+        },
+        questionText: {
+            type: DataTypes.TEXT(),
+            unique: false,
+            allowNull: true,
+            defaultValue: ''
+        },
+        questionType: {
+            type: DataTypes.STRING(20),
+            unique: false,
+            allowNull: true,
+            defaultValue: ''
+        }
+        
+    }, {
+        //모델의 옵션들을 지정하는곳    
+        tableName: 'QUESTION_TB',
+        timestamps: false,
+
+    });
+};
+```
