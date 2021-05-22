@@ -30,15 +30,13 @@ router.get("/", async(req,res) => {
 })
 
 
-
-
-
-
 //좋아요 
 router.put("/:postIdx", async(req,res) => {
     try{
         const index = req.params.postIdx;
-        const post = await Post.findOne({ postIdx: index });
+        console.log(index);
+        const post = await Post.findOne({
+            where: {PostIdx: index} });
 
     if(!post){
         return res.status(400).json({
