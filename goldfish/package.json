@@ -16,7 +16,7 @@
     "sequelize": "^6.6.2",
     "sequelize-cli": "^6.2.0"
   },
-  "main": "app.js",
+  "main": "index.js",
   "author": "",
   "license": "ISC",
   "description": ""
