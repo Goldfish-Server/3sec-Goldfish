@@ -8,7 +8,8 @@ const sc = require('../../modules/statusCode');
 const {
     Post,
     Group,
-    Question
+    Question,
+    Choice
 } = require('../../models');
 
 router.post('/',  async (req, res) => {
@@ -30,4 +31,23 @@ router.post('/',  async (req, res) => {
         return res.status(sc.INTERNAL_SERVER_ERROR).send(ut.fail(sc.INTERNAL_SERVER_ERROR, rm.CREATE_POST_FAIL));
     }
 });
+
+router.get('/',  async (req, res) => {
+    try {
+        const question = await Question.findAll({
+            
+            include: [
+                {
+                    model: Choice,
+                    attributes: ['choiceText'],
+            
+        }]});
+        
+
+        return res.status(sc.OK).send(ut.success(sc.OK, "성공",question));
+    } catch (err) {
+        console.log(err);
+        return res.status(sc.INTERNAL_SERVER_ERROR).send(ut.fail(sc.INTERNAL_SERVER_ERROR, rm.CREATE_POST_FAIL));
+    }
+})
 module.exports = router;
