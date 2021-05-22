@@ -11,6 +11,7 @@ const {
 } = require('../../models');
 
 router.post('/',  async (req, res) => {
+    res.header("Access-Control-Allow-Origin", "*");
     const {
         groupName,
     } = req.body;
