@@ -6,8 +6,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-// router.use('/group', require('./group'))
-router.use('/post', require('./post/index'))
-// router.use('/question', require('./question'))
+
+router.use('/group', require('./group'))
+//router.use('/post', require('./post'))
+router.use('/question', require('./question'))
+
 
 module.exports = router;
