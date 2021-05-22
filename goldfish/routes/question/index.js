@@ -20,8 +20,7 @@ router.post('/',  async (req, res) => {
     try {
 
         const post = await Post.create({
-            postText,
-            groupIdx : 0,
+            postText
         });
 
        // await group.addPost(post);
