@@ -12,7 +12,8 @@
 
 
 ## ERD
-<img width="398" alt="erd" src="https://user-images.githubusercontent.com/63579113/119239049-4b186f80-bb81-11eb-8c22-86db3f727c69.png">
+![image](https://user-images.githubusercontent.com/61377122/119241649-fbdb3a80-bb92-11eb-98af-59b4bf2bec52.png)
+
 
 ## MODEL
 https://github.com/Goldfish-Server/3sec-Goldfish/tree/main/goldfish/models
