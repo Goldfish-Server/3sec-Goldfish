@@ -10,6 +10,23 @@ const {
     Question
 } = require('../../models');
 
+router.post('/',  async (req, res) => {
+    const {
+        groupName,
+    } = req.body;
+
+    try {
+
+        const group = await Group.create({
+            groupName
+        });
+
+        return res.status(sc.OK).send(ut.success(sc.OK, "성공"));
+    } catch (err) {
+        console.log(err);
+        return res.status(sc.INTERNAL_SERVER_ERROR).send(ut.fail(sc.INTERNAL_SERVER_ERROR, rm.CREATE_POST_FAIL));
+    }
+});
 
 router.get('/',  async (req, res) => {
     try {
@@ -21,3 +38,4 @@ router.get('/',  async (req, res) => {
     }
 });
 module.exports = router;
+
