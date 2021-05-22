@@ -8,8 +8,8 @@
 
  ## API WIKI 
 - [API 문서](https://github.com/Goldfish-Server/3sec-Goldfish/wiki)  
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/76fb123d-d5aa-453c-906a-542f3c27c4f7/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/76fb123d-d5aa-453c-906a-542f3c27c4f7/Untitled.png)
+<img width="561" alt="api" src="https://user-images.githubusercontent.com/63579113/119239030-2c19dd80-bb81-11eb-8752-09097263c483.png">
 
 
 ## ERD
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/63597a18-7aef-4986-9178-19992a75c801/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/63597a18-7aef-4986-9178-19992a75c801/Untitled.png))
+<img width="398" alt="erd" src="https://user-images.githubusercontent.com/63579113/119239049-4b186f80-bb81-11eb-8c22-86db3f727c69.png">
